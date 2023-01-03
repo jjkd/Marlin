@@ -31,6 +31,8 @@
 // Warnings! Located here so they will appear just once in the build output.
 //
 
+#define DIAG_JUMPERS_REMOVED
+
 #if ENABLED(MARLIN_DEV_MODE)
   #warning "WARNING! Disable MARLIN_DEV_MODE for the final build!"
 #endif
