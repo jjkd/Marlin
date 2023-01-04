@@ -667,9 +667,9 @@
     #define DEFAULT_Ki_LIST {   2.85,   2.85 }
     #define DEFAULT_Kd_LIST { 66.48, 66.48 }
   #else
-    #define DEFAULT_Kp 21.3077
-    #define DEFAULT_Ki 2.2012
-    #define DEFAULT_Kd 51.5647
+    #define DEFAULT_Kp 20.7965
+    #define DEFAULT_Ki 2.1305
+    #define DEFAULT_Kd 50.7435
   #endif
 #endif
 
@@ -705,7 +705,7 @@
   #endif
 
   #define FILAMENT_HEAT_CAPACITY_PERMM { 5.6e-3f }    // 0.0056 J/K/mm for 1.75mm PLA (0.0149 J/K/mm for 2.85mm PLA).
-  //#define FILAMENT_HEAT_CAPACITY_PERMM { 3.6e-3f }  // 0.0036 J/K/mm for 1.75mm PETG (0.0094 J/K/mm for 2.85mm PETG).
+  //#define FILAMENT_HEAT_7CAPACITY_PERMM { 3.6e-3f }  // 0.0036 J/K/mm for 1.75mm PETG (0.0094 J/K/mm for 2.85mm PETG).
 
   // Advanced options
   #define MPC_SMOOTHING_FACTOR 0.5f                   // (0.0...1.0) Noisy temperature sensors may need a lower value for stabilization.
@@ -752,9 +752,9 @@
 
   // 120V 250W silicone heater into 4mm borosilicate (MendelMax 1.5+)
   // from FOPDT model - kp=.39 Tp=405 Tdead=66, Tc set to 79.2, aggressive factor of .15 (vs .1, 1, 10)
-  #define DEFAULT_bedKp 49.27
-  #define DEFAULT_bedKi 0.94
-  #define DEFAULT_bedKd 1722.26
+  #define DEFAULT_bedKp 90.0239
+  #define DEFAULT_bedKi 11.9713
+  #define DEFAULT_bedKd 451.3196
 
   // FIND YOUR OWN: "M303 E-1 C8 S90" to run autotune on the bed at 90 degreesC for 8 cycles.
 #endif // PIDTEMPBED
